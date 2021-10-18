@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Informe um número:")
+        let resultado=0
+        let i
+        for(i=2;i<=num/2;i++){
+            if(num%i==0){
+                resultado++
+                break
+            }
+        }
+        if(resultado==0){
+            console.log(+num+": É um número primo")
+        }
+        else
+            console.log(+num+": Não é um número primo")
+    </script>
+</body>
+</html>

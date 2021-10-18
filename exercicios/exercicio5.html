@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = prompt("Informe uma data no formato dd/mm/aaaa")
+        var separetadeString = date.split("/")
+        var month = ""
+
+        function writheTheCompleteDate(day,month,year){
+            if (month == 1)
+                monthName = "Janeiro"
+            else if (separetadeString[1] == 2)
+                monthName = "Fevereiro"
+            else if (separetadeString[1] == 3) 
+                monthName = "Março"
+            else if (separetadeString[1] == 4) 
+                monthName = "Abril"
+            else if (separetadeString[1] == 5) 
+                monthName = "Maio"
+            else if (separetadeString[1] == 6) 
+                monthName = "Junho"
+            else if (separetadeString[1] == 7) 
+                monthName = "Julho"
+            else if (separetadeString[1] == 8) 
+                monthName = "Agosto"
+            else if (separetadeString[1] == 9) 
+                monthName = "Setembro"
+            else if (separetadeString[1] == 10) 
+                monthName = "Outubro"
+            else if (separetadeString[1] == 11) 
+                monthName = "Novembro"
+            else if (separetadeString[1] == 12) 
+                monthName = "Dezembro"
+            alert(day + " de " + monthName + " de " + year)
+        }
+        writheTheCompleteDate(separetadeString[0],separetadeString[1],separetadeString[2])
+    </script>
+</body>
+</html>
